@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+        <div class="container">
+            <div class="row">
+                <!-- About Author -->
+            <div class="col-md-8 mt-3 left">
+                <div class="card mb-4">
+                  <img src="{{babgee.image.url}}" alt="" height="185" width="270">
+                  <div class="card-body">
+                    <h2 class="card-title">{{babgee.user.username}}</h2>
+                    <p class="card-text text-muted h6">Author | Psych blog  </p>
+          
+                    <p class="card-text">About Me</p>
+                    <p>{{babgee.description}}</p>
+                    <p>Phone: {{babgee.phone}}</p>
+                    <p>Website: {{babgee.website}}</p>
+                  </div>
+          
+                </div>
+          
+              </div>
+            </div>    
+        </div>
+
+
+
+{% endblock %}
